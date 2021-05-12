@@ -31,4 +31,15 @@ class EncryptionEloquentBuilder extends Builder
 
       return self::orWhereRaw("CONVERT(AES_DECRYPT(FROM_bASE64(`{$filter->field}`), '{$salt}') USING utf8mb4) {$filter->operation} '{$filter->value}' ");
     }
+
+    public function orderByEncrypted($param1, $param2 = null)
+    {
+        $filter            = new \stdClass();
+        $filter->field     = $param1;
+        $filter->direction = isset($param2) ? $param2 : 'asc';
+
+        $salt = substr(hash('sha256', env('APP_KEY')), 0, 16);
+
+        return self::orderByRaw("CONVERT(AES_DECRYPT(FROM_bASE64(`{$filter->field}`), '{$salt}') USING utf8mb4) {$filter->operation} '{$filter->value}' ");
+    }
 }

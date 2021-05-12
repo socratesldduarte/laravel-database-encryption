@@ -15,6 +15,8 @@
 * Minimal configuration
 * Include searching encrypted data using the following:
     `whereEncrypted` and `orWhereEncrypted`
+* Include ordering by encrypted data using the following:
+  `orderByEncrypted`
 * uses Laravel's Facades `Crypt` for encrypting and decrypting fields
 
 ## Requirements
@@ -134,6 +136,8 @@ $user = User::whereEncrypted('email','test@gmail.com')->filter(function ($item) 
 ```
 
 ## Credits
+This package was forked from the following:
+ [elgibor-solution/laravel-database-encryption](https://github.com/elgibor-solution/laravel-database-encryption)
 This package was inspired from the following:
  [austinheap/laravel-database-encryption](https://github.com/austinheap/laravel-database-encryption)
  [magros/laravel-model-encryption](https://github.com/magros/laravel-model-encryption)

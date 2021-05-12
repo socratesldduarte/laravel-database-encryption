@@ -40,6 +40,6 @@ class EncryptionEloquentBuilder extends Builder
 
         $salt = substr(hash('sha256', env('APP_KEY')), 0, 16);
 
-        return self::orderByRaw("CONVERT(AES_DECRYPT(FROM_bASE64(`{$filter->field}`), '{$salt}') USING utf8mb4) {$filter->operation} '{$filter->value}' ");
+        return self::orderByRaw("CONVERT(AES_DECRYPT(FROM_bASE64(`{$filter->field}`), '{$salt}') USING utf8mb4) {$filter->direction} ");
     }
 }

@@ -3,7 +3,7 @@
  * src/Commands/DecryptModel.php.
  *
  */
-namespace ESolution\DBEncryption\Console\Commands;
+namespace socratesldduarte\DBEncryption\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;

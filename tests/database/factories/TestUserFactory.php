@@ -1,8 +1,8 @@
 <?php
-namespace ESolution\DBEncryption\Tests\Database\Factories;
+namespace socratesldduarte\DBEncryption\Tests\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use ESolution\DBEncryption\Tests\TestUser;
+use socratesldduarte\DBEncryption\Tests\TestUser;
 
 class TestUserFactory extends Factory
 {

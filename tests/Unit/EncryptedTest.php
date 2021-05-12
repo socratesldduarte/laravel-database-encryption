@@ -1,5 +1,5 @@
 <?php
-namespace ESolution\DBEncryption\Tests;
+namespace socratesldduarte\DBEncryption\Tests;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

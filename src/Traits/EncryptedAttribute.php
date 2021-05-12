@@ -3,10 +3,10 @@
  * src/Traits/EncryptedAttribute.php.
  *
  */
-namespace ESolution\DBEncryption\Traits;
+namespace socratesldduarte\DBEncryption\Traits;
 
-use ESolution\DBEncryption\Builders\EncryptionEloquentBuilder;
-use ESolution\DBEncryption\Encrypter;
+use socratesldduarte\DBEncryption\Builders\EncryptionEloquentBuilder;
+use socratesldduarte\DBEncryption\Encrypter;
 
 trait EncryptedAttribute {
 

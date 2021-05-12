@@ -15,7 +15,7 @@
 * Minimal configuration
 * Include searching encrypted data using the following:
     `whereEncrypted` and `orWhereEncrypted`
-* Include ordering by encrypted data using the following:
+* release 1.1 Includes ordering by encrypted data using the following:
   `orderByEncrypted`
 * uses Laravel's Facades `Crypt` for encrypting and decrypting fields
 
